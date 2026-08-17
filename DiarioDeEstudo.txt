@@ -1,0 +1,48 @@
+16/08/2026:
+I downloaded deliberately dirty datasets to train myself
+how to deal with this very common problem. However, I 
+do know that real data is even messier in ways that we
+cannot easily predict, but I do think that what I am going
+to do will elucidate many concepts I need for my future
+career. I decide to write this diary in English, to already
+show to employees my proficiency, although grammatical and
+spelling mistakes are guaranteed.
+
+To start: it is evident that would be helpful for us that
+the developers coding the websites or the data-generating
+aplications should make very rigorous generators, I start
+noticing that I could write "SP", SP, Sao Paulo, sao paulo,
+in many webistes, making the job of the Data analyist and
+scientist much worse.
+
+For what I saw, we can somehow categorize the mistakes in
+categories like:
+
+INCONSISTENCY: "sp", "SP", "S.P", "são paulo", "sao paulo",
+this is categorical variants to the same thing. Also prices
+in real, some in dollar, what is called unit inconsistency.
+Also encoding issues with especial accents like ã, ä, etc;
+
+DUPLICATION: for what I understood, we may have in different
+cells exact duplicates or fuzzy duplicates (SP and SPaulo).
+
+VALIDITY: things like values outside the local range (a 67 cm 
+dick size), foreign keys pointing to rows that do not exist or
+uglinesses like numbers columns having currency symbols like R$.
+
+OUTLIERS: if a value is not ilogical, it may be so rare that
+we cannot just accept it mechanically, we may want to deal
+cautiously with it.
+
+MISSING DATA:
+https://ealexbarros.medium.com/principais-tipos-de-dados-faltantes-missing-em-um-dataset-49aa35cf18c8
+I readed the website above me to better understand what is
+going on. There is three types of missing data: MCAR, MAR,
+and MNAR.
+    MCAR: random and not carring correlation. Like the data
+from the orbit of saturn and the revenue of a small retail
+store in Manaus. (I can actually make some hypothesis to
+relate both events, like saturn's orbit and the months of earth).
+    MAR: we may find correlation between missing data and
+the data itself. Like men can easily say their weight, but
+women may refuse by letting blank an option.
